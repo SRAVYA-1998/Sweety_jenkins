@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		,glue={"step_orange"}
 		)
 
-public class Testrunner_rajesh{
+public class Test_runner{
 	
 
 }

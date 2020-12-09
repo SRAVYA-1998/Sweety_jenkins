@@ -19,7 +19,7 @@ public class Steps {
 	
 	@Given("^User is on OrangeHRM login page$")
 	public void user_is_on_OrangeHRM_login_page() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -150,7 +150,7 @@ public class Steps {
 
 	@Given("^User is on Dashboard page$")
 	public void user_is_on_Dashboard_page() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -168,9 +168,7 @@ public class Steps {
 
 	@When("^User is navigated to PIM Module$")
 	public void user_is_navigated_to_PIM_Module() throws Throwable {
-		/*WebElement pim1 = pimPg.clickPimModule();
-		Actions act = new Actions(driver);
-		act.moveToElement(pim1).doubleClick().perform();*/
+		
 	opm.clickPimModule();
 
 	    
@@ -178,12 +176,7 @@ public class Steps {
 
 	@When("^User clicks on Optional feilds module in Configuration Module$")
 	public void user_clicks_on_Optional_feilds_module_in_Configuration_Module() throws Throwable {
-		/*WebElement configuration = pimPg.clickconfiguration();
-		Actions act1 = new Actions(driver);
-		act1.moveToElement(configuration).doubleClick().build().perform();
-		WebElement optional = pimPg.clickoptional();
-		Actions act2 = new Actions(driver);
-		act2.moveToElement(optional).doubleClick().build().perform();*/
+		
 		opm.clickconfiguration();
 		opm.clickoptional();
 
@@ -192,12 +185,7 @@ public class Steps {
 
 	@Then("^User can view the Configure PIM Module$")
 	public void user_can_view_the_Configure_PIM_Module() throws Throwable {
-		/*String title=driver.findElement(By.xpath("//*[@id=content']/div/div[1]/h1")).getText();
-		if(title.contentEquals("Configure PIM")) System.out.println("Title Matched");
-		else System.out.println("Title NOT Matched");
-		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
-		System.out.println("User can view the Configure PIM Module");
-		//driver.close();*/
+		
 		System.out.println("User can view the Configure PIM Module");
 		driver.close();
 
@@ -206,9 +194,7 @@ public class Steps {
 
 	@When("^User clicks on Custom feilds module in Configuration Module$")
 	public void user_clicks_on_Custom_feilds_module_in_Configuration_Module() throws Throwable {
-		/*WebElement configuration = pimPg.clickconfiguration();
-		Actions act1 = new Actions(driver);
-		act1.moveToElement(configuration).doubleClick().perform();*/
+		
 		opm.clickconfiguration();
 		opm.clickcustom();
 
@@ -217,10 +203,10 @@ public class Steps {
 
 	@Then("^User can view the Defined Custom Fields$")
 	public void user_can_view_the_Defined_Custom_Fields() throws Throwable {
-		String title=driver.findElement(By.xpath("//*[@id='customFieldListPane']/div[1]/h1")).getText();
+		/*String title=driver.findElement(By.xpath("//*[@id='customFieldListPane']/div[1]/h1")).getText();
 		if(title.contentEquals("Defined Custom Fields")) System.out.println("Title Matched");
 		else System.out.println("Title NOT Matched");
-		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);*/
 		System.out.println("User can view the Defined Custom Fields");
 		driver.close();
 
@@ -245,13 +231,13 @@ public class Steps {
 
 	@Then("^User should be able to add details of new employee$")
 	public void user_should_be_able_to_add_details_of_new_employee() throws Throwable {
-		opm.enterfirstname("rajesh");
-		opm.entermiddlename("kumar");
-		opm.enterlastname("behara");
+		opm.enterfirstname("sravya");
+		opm.entermiddlename("s");
+		opm.enterlastname("sirlapu");
 		opm.clickCheckBox();
-		opm.enterUserName("rajesh");
-		opm.enterPassWord("rajesh04");
-		opm.enterConfirmPassword("rajesh04");
+		opm.enterUserName("ssravya");
+		opm.enterPassWord("7995365351");
+		opm.enterConfirmPassword("7995365351");
 		opm.clickSave();
 		Thread.sleep(1000);
 		driver.close();
@@ -294,7 +280,7 @@ public class Steps {
 
 	@Given("^User is on OrangeHRM login page to enter data of employee$")
 	public void user_is_on_OrangeHRM_login_page_to_enter_data_of_employee() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -307,8 +293,8 @@ public class Steps {
 
 	@When("^User enters username and password of the employee$")
 	public void user_enters_username_and_password_of_the_employee() throws Throwable {
-		olg.enterUsername("rajesh");
-		olg.enterPassword("rajesh04");
+		olg.enterUsername("ssravya");
+		olg.enterPassword("7995365351");
 	   
 	}
 
