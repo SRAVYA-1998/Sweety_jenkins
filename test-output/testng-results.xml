@@ -1,31 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="318977" started-at="2020-12-09T04:11:22Z" finished-at="2020-12-09T04:16:41Z">
+  <suite name="Default suite" duration-ms="289656" started-at="2020-12-09T11:01:46Z" finished-at="2020-12-09T11:06:36Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@735f7ae5]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="318977" started-at="2020-12-09T04:11:22Z" finished-at="2020-12-09T04:16:41Z">
+    <test name="Default test" duration-ms="289656" started-at="2020-12-09T11:01:46Z" finished-at="2020-12-09T11:06:36Z">
       <class name="testrunner.TestNG">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.TestNG@735f7ae5]" name="setUpClass" is-config="true" duration-ms="1741" started-at="2020-12-09T09:41:22Z" finished-at="2020-12-09T09:41:24Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.TestNG@71be98f5]" name="setUpClass" is-config="true" duration-ms="1129" started-at="2020-12-09T16:31:46Z" finished-at="2020-12-09T16:31:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@735f7ae5]" name="feature" duration-ms="314944" started-at="2020-12-09T09:41:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-12-09T09:46:40Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="27922" started-at="2020-12-09T16:31:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:32:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[OrangeHRM]]>
+                <![CDATA["Unsuccessful login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.TestNG@735f7ae5]" name="tearDownClass" is-config="true" duration-ms="1805" started-at="2020-12-09T09:46:40Z" finished-at="2020-12-09T09:46:41Z">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="18261" started-at="2020-12-09T16:32:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:32:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Unsuccessful login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="15562" started-at="2020-12-09T16:32:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:32:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Failure in Login on leaving the username empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="13591" started-at="2020-12-09T16:32:49Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:33:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Failure in Login on leaving the password empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="13495" started-at="2020-12-09T16:33:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:33:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Failure in Login on leaving username and password fields empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="20003" started-at="2020-12-09T16:33:16Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:33:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="22501" started-at="2020-12-09T16:33:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:33:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to Configure PIM field in Configuration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="22386" started-at="2020-12-09T16:33:59Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:34:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Navigate to Defined Custom Fields module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="22108" started-at="2020-12-09T16:34:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:34:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["View all Employee Details in PIM Module"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="24048" started-at="2020-12-09T16:34:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:35:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add Employee Details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="28823" started-at="2020-12-09T16:35:07Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:35:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to generate reports of employees in reports section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="18676" started-at="2020-12-09T16:35:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:35:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin should be able to view his personal details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="19856" started-at="2020-12-09T16:35:55Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:36:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Employee should be able to view his personal details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testrunner.TestNG@71be98f5]" name="runScenario" duration-ms="20930" started-at="2020-12-09T16:36:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-09T16:36:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful logout from OrangeHRM page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["OrangeHRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.TestNG@71be98f5]" name="tearDownClass" is-config="true" duration-ms="113" started-at="2020-12-09T16:36:35Z" finished-at="2020-12-09T16:36:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
